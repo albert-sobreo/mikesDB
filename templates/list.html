@@ -1,0 +1,16 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<table class="table table-centered">
+    <tr>
+        <td>Game</td>
+        <td>Price</td>
+    </tr>
+    {% for game in games %}
+    <tr>
+        <td>{{game.name}}</td>
+        <td>{{game.price}}</td>
+    </tr>
+    {% endfor %}
+
+</table>
